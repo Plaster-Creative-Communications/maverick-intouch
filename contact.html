@@ -1,0 +1,654 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.typekit.net/kim3yej.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+
+<style>
+    :root {
+        --light-blue: #00afce;
+        --white: #ffffff;
+        --green: rgb(0, 87, 88);
+        --lightgrey: #f6f6f6;
+        --darkgrey: #D3D3D3;
+        --yellow: yellow;
+    }
+
+    * {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .z-index1 {
+        z-index: 1;
+    }
+
+    
+    body {
+        background-color: #ffffff !important;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--green) !important;
+        font-weight: bold;
+    }
+
+
+    h1 {
+        font-size: 36px !important;
+        line-height: 40px !important;
+        font-weight: normal;
+        margin: 3rem 0;
+    }
+
+    h2 {
+        font-size: 32px !important;
+        margin: 3rem 0;
+    }
+
+    h3 {
+        font-size: 22px !important;
+    }
+
+    h4 {
+        font-size: 24px !important;
+    }
+
+    h5 {
+        font-size: 18px !important;
+    }
+
+    /* Font Sizes */
+
+    .font18 { font-size: 18px !important; }
+    .font19 { font-size: 19px !important; }
+    .font20 { font-size: 20px !important; }
+    .font21 { font-size: 21px !important; }
+    .font36 { font-size: 36px !important;
+              line-height: 40px !important;}
+    .font42 { font-size: 42px !important; }
+    .font58 { font-size: 58px !important; }
+
+    /* Font Sytles*/
+    .bold {
+        font-weight: 700 !important;
+    }
+
+
+    /* Widths */
+    .width20 { width: 30% !important; }
+    .width30 { width: 30% !important; }
+    .width40 { width: 40% !important; } 
+    .width50 { width: 50% !important; }
+    .width60 { width: 60% !important; }
+    .width70 { width: 70% !important; }
+    .width80 { width: 80% !important; }
+    .width90 { width: 90% !important; }
+    .width100 { width: 100% !important;}
+
+    /* Colours and Filters */
+
+    .color-blue {  color: var(--light-blue) !important; }
+    .color-white { color: var(--white) !important; }
+    .color-green { color: var(--green) !important; }
+    .colot-yellow { color: var(--yellow) !important;}
+
+    .bg-green {     background-color: var(--green) !important; }    
+    .bg-black {     background-color: #071018 !important; }
+    .bg-blue {      background-color: var(--light-blue) !important; }
+    .bg-darkgrey {  background-color: var(--darkgrey) !important; }
+    .bg-lightgrey { background-color: var(--lightgrey); }
+
+    .green-filter {
+        filter: invert(24%) sepia(13%) saturate(6066%) hue-rotate(154deg) brightness(96%) contrast(101%);
+    }
+
+    .invert {
+        -webkit-filter: invert(100%) !important;
+        filter: invert(100%);
+    }
+
+
+    /* Alignment */
+
+    .center-img,
+    .center-content { margin: auto !important;}
+
+    .text-center { text-align: center!important; }
+    .text-left   { text-align: left!important; }
+    .text-right  { text-align: right!important; }
+
+    .self-align-right { align-self: flex-end;} 
+    .self-align-left  { align-self: flex-start;} 
+
+    .itmes-align-center { align-items: center;}
+
+
+
+    /* Padding */
+
+    .padt-10 { padding-top: 10px; }
+    .padt-30 { padding-top: 30px; }
+    .padt-50 { padding-top: 50px; }
+    .padt-80 { padding-top: 80px; }
+    .padt-100 { padding-top: 100px; }
+
+    .padb-10 { padding-bottom: 10px; }
+    .padb-30 { padding-bottom: 30px; }
+    .padb-50 { padding-bottom: 50px; }
+    .padb-80 { padding-bottom: 80px; }
+    .padb-100 { padding-bottom: 100px; }
+
+    .padl-10 { padding-left: 10px; }
+    .padl-30 { padding-left: 30px; }
+    .padl-50 { padding-left: 50px; }
+    .padl-80 { padding-left: 80px; }
+    .padl-100 { padding-left: 100px; }
+
+    .padr-10 { padding-right: 10px; }
+    .padr-30 { padding-right: 30px; }
+    .padr-50 { padding-right: 50px; }
+    .padr-80 { padding-right: 80px; }
+    .padr-100 { padding-right: 100px; }
+
+    /* Spacer Block Divs */
+
+    [class^="spacer-"] {
+        width: 100%;
+    }
+    .spacer-10 { padding: 5px 0; }
+    .spacer-30 { padding: 15px 0; }
+    .spacer-50 { padding: 25px 0; }
+    .spacer-100 {padding: 50px 0;}
+    
+    
+    /* Containers */
+
+    /* Main container width to force no mobile styles */
+    .main-container {
+        min-width: 1200px !important;
+        max-width: 1400px !important;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .content-container {
+        display: block;
+        margin: auto !important;
+        min-width: 1200px !important;
+        width: 1200px !important;
+        max-width: 1200px !important
+    }
+
+
+
+    /***************
+        BLOCKS
+    *****************/
+
+
+    /*Hero Image Block*/
+    /**********************************************/
+
+    .hero-image-block,
+    .hero-image-block img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* INTRO SECTION Block*/
+    /**********************************************/
+
+    .intro-section {
+        display: block;
+        padding: 2rem 0;
+        color: var(--green) !important;
+    }
+
+
+    /* Text Block */
+    /**********************************************/
+
+    .text-block h2 {
+        margin-bottom: .5rem;
+    }
+
+
+
+    /* COLUMN BLOCKS */
+    /**********************************************/
+
+    [class^="row-col"] {
+        display: grid;
+        justify-content: center;
+        list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0px;
+        color: #696969;
+        padding-left: 0 !important; /*overide*/
+        margin-left: 0 !important; /*overide*/
+    }
+
+    /* 3 Columns */
+    .row-col--2 {
+      grid: 1fr / repeat(2, calc((1200px / 2) - 1.3rem));
+     gap: 2rem;
+    }
+
+    /* 3 Columns */
+    .row-col--3 {
+        grid: 1fr / repeat(3, calc((1200px / 3) - 1.3rem));
+        gap: 2rem;
+    }
+    ul.row-col--3 li p {
+        line-height: 24px;
+    }
+
+    /* 4 Columns */
+    .row-col--4 {
+        grid: auto / repeat(4, calc((1200px / 4) - 1.3rem));
+        gap: 2rem;
+    }
+
+    /* 6 Columns */
+    .row-col--6 {
+        grid: auto / repeat(6, calc((1200px / 6) - 0.85rem));
+        gap: 1rem;
+    }
+
+
+    [class^="card-container"],
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        transition: all .3s ease-in-out;
+    }
+
+    .card-container__icon,
+    .card-container__copy {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card-container__icon img {
+        margin: 0 auto;
+    }
+
+    .card-container__copy {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Hover style for card */
+    .card-hover:hover {
+        background-color: #e2e2e2 !important;
+    }
+
+
+
+    /* Card Grids (no copy - icon and title) Block*/
+    /**********************************************/
+
+    .card-container--grid {
+        padding: 25px;
+        justify-content: center;
+        background-color: #EBEBEB !important;
+    }
+    .card-container--grid h3 {
+        margin-top: 1rem;
+        margin-bottom: unset !important;
+        min-height: 52px;
+    }
+
+
+    /* Logo Grid Block */
+    /**********************************************/
+
+    .logo-grid-card img {
+        padding: .25rem !important;
+        background-color: var(--lightgrey);
+        transition: all .3s ease-in-out; 
+    }
+
+    .logo-grid-card img:hover {
+        background-color: #ebebeb; 
+        outline: 1px solid var(--light-blue);
+        outline-style: dashed;
+        outline-offset: -5px;
+    }
+
+    /* Open Grid Block */
+    /**********************************************/
+
+    .open-grid {
+        gap: unset;
+    }
+
+    .open-grid-container {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 3px;
+    }
+
+    li.open-grid-container {
+        border-left: 1px solid yellow;
+    }
+    li.open-grid-container:nth-child(1),
+    li.open-grid-container:nth-child(5n+0) {
+        border-left: none;
+    }
+    li.open-grid-container:nth-child(n+5) {
+        border-top: 1px solid yellow;
+    }
+
+
+    /*CTA - 2 Col Block (Contact Page)*/
+    /**********************************************/
+
+    .cta-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-col:nth-child(2) {
+        border-left: 1px solid yellow;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 25px;
+    }
+
+    .button--sm {
+        padding: 5px 15px;
+    }
+    
+    .button--white {
+        background-color: transparent;
+        border: 2px solid var(--white);
+    }
+    .button--green {
+        background-color: transparent;
+        border: 2px solid var(--green);
+    }
+    .button--yellow {
+        background-color: transparent;
+        border: 2px solid var(--yellow);
+        color: var(--yellow) !important;
+    }
+
+
+    /* Top Dash Block
+    ***********************************/
+
+    .top-dash-block--blue {
+        border-top: 2px solid var(--light-blue);
+        border-top-style: dashed;
+    }
+    .top-dash-block--green {
+        border-top: 2px solid var(--green);
+        border-top-style: dashed;
+    }
+
+
+    [class^="top-dash-block"] > [class^="heading-block"] > h2 {
+        margin: .8rem 0 1.5rem !important;
+    }
+
+    /* Resources List*/
+
+    ul.resources-list {
+        list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0;
+    }
+    ul.resources-list li {
+        display: inline-block;
+        background-color: var(--lightgrey);
+        padding: 5px 15px;
+        margin-right: 5px;
+    }
+
+
+    /* Page Specific Styles */
+    /**********************************************/
+
+    /* Contact Page */
+    .contact-regions-grid ul.row-col--3{
+        gap: 5rem !important;
+    }
+
+
+
+
+</style>
+
+<script>
+    $('#carouselExampleControls').carousel({
+        interval: 5000,
+      
+    })   
+</script>
+
+
+<main class="main-container">
+
+    <!-- Hero image block -->
+    <div class="hero-image-block">
+        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/Contact-Banner-Final.jpg?imgCache=16.02.2023" class="width100 hero-background-image" alt="" width="" height="">
+        <!-- <h1 style="display: none;">Contact</h1> -->
+    </div>
+    <!-- END Hero image block -->
+
+
+
+
+    <!-- 2 Col CTA Block -->
+
+    <section class="cta-2-col-block bg-green">
+        <div class="spacer-30"></div>
+            <div class="row-col--2">
+                <div class="cta-col width100">
+                    <h2 class="color-white text-center">Become a TD <br> Synnex Partner
+                    </h2>
+                    <button class="color-white button button--white font20">Apply Now</button>
+                </div>
+                <div class="cta-col width100">
+                    <h2 class="color-white text-center">Connect With You <br> Account Team
+                    </h2>
+                    <button class="color-white button button--white font20">Apply Now</button>
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- Text Block -->
+    <section class="text-block bg-green padt-50">
+        <div class="spacer-30"></div>
+        <p class="font21 color-white padl-100 padr-100">With over 20 years in the industry we have
+            lined up one of the most impressive portfolios of AV brands in the world, from projection and display technology to personal collaboration devices and the connectivity you require to make it smart, Maverick's manufacturing partners are second to none.</p>
+            <div class="spacer-30"></div>
+    </section>
+    <!-- END of Text Block -->
+
+
+    <div class="spacer-100"></div>
+
+    <section class="contact-regions-grid">
+        <!-- 3 Col Icon Block -->
+        <ul class="row-col--3">
+
+            <li class="card-container  region-card">
+                <div class="card-container__copy text-left">
+                    <h3>UK</h3>
+                    <address>Redwood 2, Crockford Lane, Chineham Business Park Basingstoke RG24 8WQ UK</address>
+                    <p>maverickenquiries@tdsynnex.com</p>
+                    <p>+44 01256 788 733</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Austria</h3>
+                    <address>Tech Data Österreich GmbH
+                        Kranichberggasse 6
+                        Europlaza
+                        K1120 Wien</address>
+                    <p>sales@techdata.at</p>
+                    <p>+43 (0) 1 / 48801-0</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Belgium</h3>
+                    <address>Assesteenweg 117/1
+                        1740 Ternat
+                        Belgium</address>
+                    <p>Info.maverick.be@tdsynnex.com</p>
+                    <p>+32 (0)2 583 89 59</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Denmark</h3>
+                    <address>Banevænget 13, 3460
+                        Birkerød
+                        Denmark</address>
+                    <p>lene.persson@techdata.dk</p>
+                    <p>+45 51 51 72 52</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Finland</h3>
+                    <address>Tech Data Finland Oy
+                        Sokerilinnantie 11 C 02660 ESPOO</address>
+                    <p>maverick@techdata.fi</p>
+                    <p>+358 (0)20 155 3636</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>France</h3>
+                    <address>Tech Data,
+                        5 Avenue de l'Europe 77600
+                        Bussy-Saint-Georges
+                        France</address>
+                    <p>equipemaverickfr
+                        @tdmaverick.fr</p>
+                    <p>+(33) 825 32 80 00</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Germany</h3>
+                    <address>Tech Data GmbH &amp; Co. OHG
+                        Kistlerhofstraße 75
+                        81379, München</address>
+                    <p>maverick@techdata.de</p>
+                    <p>+49 (0)89 / 4700-0</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Italy</h3>
+                    <address>Tech Data Italia,
+                        Via Tolstoi 65
+                        20098 San Giuliano Milanese, Italy</address>
+                    <p>maverick@techdata.it</p>
+                    <p>+39 02.98495.114</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Netherlands</h3>
+                    <address>Tolnasingel 2, 2411 PV
+                        Bodegraven
+                        Netherlands</address>
+                    <p>info@tdmaverick.nl</p>
+                    <p>+31 (0)88 133 4256</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Norway</h3>
+                    <address>Innspurten 1A, 0663
+                        Oslo
+                        Norway</address>
+                    <p>norway@tdmaverick.com</p>
+                    <p>+47 22 89 70 00</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Portugal</h3>
+                    <address>Av. D. João II Lote 1.07.2.1
+                        Piso 1 – Ala A 1998-014, Lisboa</address>
+                    <p>info@maverick.com.pt</p>
+                    <p>+351 21 472 84 00</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Spain</h3>
+                    <address>Maverick Spain
+                        Acer 30-32
+                        08038 Barcelona, Spain</address>
+                    <p>info@tdmaverick.es</p>
+                    <p>+32 902 575 459</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Sweden</h3>
+                    <address>TD Tech Data AB – Huvudkontor
+                        Box 56, 163 91 SPÅNGA
+                        Stockholm, Sweden</address>
+                    <p>andreas.Sigevall
+                        @tdmaverick.com</p>
+                    <p>+46 8 564 730 57</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Switzerland</h3>
+                    <address></address>
+                    <p>info@techdata.ch</p>
+                    <p>+46 8 564 730 57</p>
+                </div>
+            </li>
+            <li class="card-container region-card">
+                <div class="card-container__copy text-left">
+                    <h3>Australia</h3>
+                    <address>Level 2, 67 Epping Road
+                        Macquarie Park
+                        NSW 2113 Australia</address>
+                    <p>maverick-anz@techdata.com</p>
+                </div>
+            </li>
+        </ul>
+        <!-- END of 3 Col Icon Block -->
+    </section>
+    
+    <div class="spacer-50"></div>
+
+ <!-- END on Content Container -->
+
+    <!-- End of page container-fluid -->
+</main>

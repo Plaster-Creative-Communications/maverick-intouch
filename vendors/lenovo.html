@@ -1,0 +1,548 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.typekit.net/kim3yej.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+<style>
+    :root {
+        --light-blue: #00afce;
+        --white: #ffffff;
+        --green: rgb(0, 87, 88);
+        --lightgrey: #f6f6f6;
+        --darkgrey: #D3D3D3;
+        --yellow: yellow;
+    }
+
+    * {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .z-index1 {
+        z-index: 1;
+    }
+
+    
+    body {
+        background-color: #ffffff !important;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--green) !important;
+        font-weight: bold;
+    }
+
+
+    h1 {
+        font-size: 36px !important;
+        line-height: 40px !important;
+        font-weight: normal;
+        margin: 3rem 0;
+    }
+
+    h2 {
+        font-size: 32px !important;
+        margin: 3rem 0;
+    }
+
+    h3 {
+        font-size: 22px !important;
+    }
+
+    h4 {
+        font-size: 24px !important;
+    }
+
+    h5 {
+        font-size: 18px !important;
+    }
+
+    /* Font Sizes */
+
+    .font18 { font-size: 18px !important; }
+    .font19 { font-size: 19px !important; }
+    .font20 { font-size: 20px !important; }
+    .font21 { font-size: 21px !important; }
+    .font36 { font-size: 36px !important;
+              line-height: 40px !important;}
+    .font42 { font-size: 42px !important; }
+    .font58 { font-size: 58px !important; }
+
+    /* Font Sytles*/
+    .bold {
+        font-weight: 700 !important;
+    }
+
+
+    /* Widths */
+    .width20 { width: 30% !important; }
+    .width30 { width: 30% !important; }
+    .width40 { width: 40% !important; } 
+    .width50 { width: 50% !important; }
+    .width60 { width: 60% !important; }
+    .width70 { width: 70% !important; }
+    .width80 { width: 80% !important; }
+    .width90 { width: 90% !important; }
+    .width100 { width: 100% !important;}
+
+    /* Colours and Filters */
+
+    .color-blue {  color: var(--light-blue) !important; }
+    .color-white { color: var(--white) !important; }
+    .color-green { color: var(--green) !important; }
+    .colot-yellow { color: var(--yellow) !important;}
+
+    .bg-green {     background-color: var(--green) !important; }    
+    .bg-black {     background-color: #071018 !important; }
+    .bg-blue {      background-color: var(--light-blue) !important; }
+    .bg-darkgrey {  background-color: var(--darkgrey) !important; }
+    .bg-lightgrey { background-color: var(--lightgrey); }
+
+    .green-filter {
+        filter: invert(24%) sepia(13%) saturate(6066%) hue-rotate(154deg) brightness(96%) contrast(101%);
+    }
+
+    .invert {
+        -webkit-filter: invert(100%) !important;
+        filter: invert(100%);
+    }
+
+
+    /* Alignment */
+
+    .center-img,
+    .center-content { margin: auto !important;}
+
+    .text-center { text-align: center!important; }
+    .text-left   { text-align: left!important; }
+    .text-right  { text-align: right!important; }
+
+    .self-align-right { align-self: flex-end;} 
+    .self-align-left  { align-self: flex-start;} 
+
+    .itmes-align-center { align-items: center;}
+
+
+
+    /* Padding */
+
+    .padt-10 { padding-top: 10px; }
+    .padt-30 { padding-top: 30px; }
+    .padt-50 { padding-top: 50px; }
+    .padt-80 { padding-top: 80px; }
+    .padt-100 { padding-top: 100px; }
+
+    .padb-10 { padding-bottom: 10px; }
+    .padb-30 { padding-bottom: 30px; }
+    .padb-50 { padding-bottom: 50px; }
+    .padb-80 { padding-bottom: 80px; }
+    .padb-100 { padding-bottom: 100px; }
+
+    .padl-10 { padding-left: 10px; }
+    .padl-30 { padding-left: 30px; }
+    .padl-50 { padding-left: 50px; }
+    .padl-80 { padding-left: 80px; }
+    .padl-100 { padding-left: 100px; }
+
+    .padr-10 { padding-right: 10px; }
+    .padr-30 { padding-right: 30px; }
+    .padr-50 { padding-right: 50px; }
+    .padr-80 { padding-right: 80px; }
+    .padr-100 { padding-right: 100px; }
+
+    /* Spacer Block Divs */
+
+    [class^="spacer-"] {
+        width: 100%;
+    }
+    .spacer-10 { padding: 5px 0; }
+    .spacer-30 { padding: 15px 0; }
+    .spacer-50 { padding: 25px 0; }
+    .spacer-100 {padding: 50px 0;}
+    
+    
+    /* Containers */
+
+    /* Main container width to force no mobile styles */
+    .main-container {
+        min-width: 1200px !important;
+        max-width: 1400px !important;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .content-container {
+        display: block;
+        margin: auto !important;
+        min-width: 1200px !important;
+        width: 1200px !important;
+        max-width: 1200px !important
+    }
+
+
+
+    /***************
+        BLOCKS
+    *****************/
+
+
+    /*Hero Image Block*/
+    /**********************************************/
+
+    .hero-image-block,
+    .hero-image-block img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* INTRO SECTION Block*/
+    /**********************************************/
+
+    .intro-section {
+        display: block;
+        padding: 2rem 0;
+        color: var(--green) !important;
+    }
+
+
+    /* Text Block */
+    /**********************************************/
+
+    .text-block h2 {
+        margin-bottom: .5rem;
+    }
+
+
+
+    /* COLUMN BLOCKS */
+    /**********************************************/
+
+    [class^="row-col"] {
+        display: grid;
+        justify-content: center;
+        list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0px;
+        color: #696969;
+        padding-left: 0 !important; /*overide*/
+        margin-left: 0 !important; /*overide*/
+    }
+
+    /* 3 Columns */
+    .row-col--2 {
+      grid: 1fr / repeat(2, calc((1200px / 2) - 1.3rem));
+     gap: 2rem;
+    }
+
+    /* 3 Columns */
+    .row-col--3 {
+        grid: 1fr / repeat(3, calc((1200px / 3) - 1.3rem));
+        gap: 2rem;
+    }
+    ul.row-col--3 li p {
+        line-height: 24px;
+    }
+
+    /* 4 Columns */
+    .row-col--4 {
+        grid: auto / repeat(4, calc((1200px / 4) - 1.3rem));
+        gap: 2rem;
+    }
+
+    /* 6 Columns */
+    .row-col--6 {
+        grid: auto / repeat(6, calc((1200px / 6) - 0.85rem));
+        gap: 1rem;
+    }
+
+
+    [class^="card-container"],
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        transition: all .3s ease-in-out;
+    }
+
+    .card-container__icon,
+    .card-container__copy {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card-container__icon img {
+        margin: 0 auto;
+    }
+
+    .card-container__copy {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Hover style for card */
+    .card-hover:hover {
+        background-color: #e2e2e2 !important;
+    }
+
+
+
+    /* Card Grids (no copy - icon and title) Block*/
+    /**********************************************/
+
+    .card-container--grid {
+        padding: 25px;
+        justify-content: center;
+        background-color: #EBEBEB !important;
+    }
+    .card-container--grid h3 {
+        margin-top: 1rem;
+        margin-bottom: unset !important;
+        min-height: 52px;
+    }
+
+
+    /* Logo Grid Block */
+    /**********************************************/
+
+    .logo-grid-card img {
+        padding: .25rem !important;
+        background-color: var(--lightgrey);
+        transition: all .3s ease-in-out; 
+    }
+
+    .logo-grid-card img:hover {
+        background-color: #ebebeb; 
+        outline: 1px solid var(--light-blue);
+        outline-style: dashed;
+        outline-offset: -5px;
+    }
+
+    /* Open Grid Block */
+    /**********************************************/
+
+    .open-grid {
+        gap: unset;
+    }
+
+    .open-grid-container {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 3px;
+    }
+
+    li.open-grid-container {
+        border-left: 1px solid yellow;
+    }
+    li.open-grid-container:nth-child(1),
+    li.open-grid-container:nth-child(5n+0) {
+        border-left: none;
+    }
+    li.open-grid-container:nth-child(n+5) {
+        border-top: 1px solid yellow;
+    }
+
+
+    /*CTA - 2 Col Block (Contact Page)*/
+    /**********************************************/
+
+    .cta-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-col:nth-child(2) {
+        border-left: 1px solid yellow;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 25px;
+    }
+
+    .button--sm {
+        padding: 5px 15px;
+    }
+    
+    .button--white {
+        background-color: transparent;
+        border: 2px solid var(--white);
+    }
+    .button--green {
+        background-color: transparent;
+        border: 2px solid var(--green);
+    }
+    .button--yellow {
+        background-color: transparent;
+        border: 2px solid var(--yellow);
+        color: var(--yellow) !important;
+    }
+
+
+    /* Top Dash Block
+    ***********************************/
+
+    .top-dash-block--blue {
+        border-top: 2px solid var(--light-blue);
+        border-top-style: dashed;
+    }
+    .top-dash-block--green {
+        border-top: 2px solid var(--green);
+        border-top-style: dashed;
+    }
+
+
+    [class^="top-dash-block"] > [class^="heading-block"] > h2 {
+        margin: .8rem 0 1.5rem !important;
+    }
+
+    /* Resources List*/
+
+    ul.resources-list {
+        list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0;
+    }
+    ul.resources-list li {
+        display: inline-block;
+        background-color: var(--lightgrey);
+        padding: 5px 15px;
+        margin-right: 5px;
+    }
+
+
+    /* Page Specific Styles */
+    /**********************************************/
+
+    /* Contact Page */
+    .contact-regions-grid ul.row-col--3{
+        gap: 5rem !important;
+    }
+
+
+
+
+</style>
+
+<script>
+    $('#carouselExampleControls').carousel({
+        interval: 5000,
+      
+    })   
+</script>
+
+
+
+<main class="main-container">
+
+    <!-- Hero image block -->
+    <div class="hero-image-block">
+        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/banner_vendor_lenovo.png" alt="Lenovo" width="" height="">
+    </div>
+    <!-- END Hero image block -->
+
+    <section class="content-container">
+
+        <!-- Intro Section Block -->
+        <section class="intro-section">
+            <h1>Maverick AV Solutions with: Lenovo</h1>
+        </section>
+        <!-- END of Intro Section Block -->
+
+    
+    <section class="bg-lightgrey padt-50 padb-50">            
+        <!-- fifty-fifty 2 Col Block -->
+        <section class="fifty-fifty-block">
+            <div class="row-col--2 itmes-align-center">
+                <div class="col-container padl-30">
+                    <h3 class="">Series One Google Meet Room Kits</h3>
+                    <p>Lenovo creates powerful, compact solutions for meeting room collaboration. Enable rapid Google Meets through three preconfigured kits, designed for small, medium or large meeting rooms. Featuring a smart camera, smart audio bar, mic pod, Meet compute system and touch controller, all prepackaged and delivered as a single solution for Google Meet Rooms.</p>
+                </div>
+                <div class="col-container padr-30">
+                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/vendor_gallery_lenovo_1.png" class="width100 self-align-right" alt="Lenovo Meet Room Kit" width="" height="">
+                </div>
+            </div>
+        </section>
+        <!-- END of fifty-fifty 2 Col Block -->
+    </section>
+
+    
+    <!-- fifty-fifty 2 Col Block -->
+    <section class="fifty-fifty-block padt-80 padb-80">
+        <div class="row-col--2 itmes-align-center">
+            <div class="col-container padl-30">
+                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/vendor_gallery_lenovo_3.png" class="width100 self-align-left" alt="Lenovo team call" width="" height="">
+            </div>
+            <div class="col-container padr-30">
+                <h3 class="">ThinkSmart Hub (Microsoft Teams Room)</h3>
+                <p>This meeting device is making meetings more efficient than ever. Built on the Microsoft Teams platform with 8th Gen Intel® Core™ processors, the Thinksmart Hub has a slim design with a sleek display, speakers and microphones. It’s innovative single-cable mechanism makes connectivity simple. It’s still scalable across room sizes and features one-touch meeting start, for the best possible Microsoft Teams experience.</p>
+            </div>
+        </div>
+    </section>
+    <!-- END of fifty-fifty 2 Col Block -->
+
+    <section class="bg-lightgrey padt-50 padb-50">            
+        <!-- fifty-fifty 2 Col Block -->
+        <section class="fifty-fifty-block">
+            <div class="row-col--2 itmes-align-center">
+                <div class="col-container padl-30">
+                    <h3 class="">ThinkSmart View</h3>
+                    <p>ThinkSmart View is a collaborative smart device that works from an individual’s workspace, tackling administrative tasks that waste a PC’s resources. The device works with a PC to “divide and conquer” so you can simultaneously use your PC for productivity and ThinkSmart View for administrative tasks. Personal productivity assistant for the workplace.</p>
+                </div>
+                <div class="col-container padr-30">
+                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/vendor_gallery_lenovo_2.png" class="width100 self-align-right" alt="ThinkSmart View" width="" height="">
+                </div>
+            </div>
+        </section>
+        <!-- END of fifty-fifty 2 Col Block -->
+    </section>
+
+    <!-- Heading Block -->
+    <div class="heading-block--h2 padl-30 padt-80">
+        <h2>Next level Teams Rooms</h2>
+    </div>
+    <!-- END of Heading Block -->
+    <!-- fifty-fifty 2 Col Block -->
+    <section class="fifty-fifty-block padt-10 padb-80">
+        <div class="row-col--2 itmes-align-center">
+            <div class="col-container padl-30">
+                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/vendor_gallery_lenovo_3.png" class="width100 self-align-left" alt="Lenovo team call" width="" height="">
+            </div>
+            <div class="col-container padr-30">
+                <h3 class="">Lenovo ThinkSmart Core, Controller and Bose Videobar™ VB1</h3>
+                <p>Designed for huddle spaces and small-to medium-sized conference rooms. This is an ideal solution for getting meeting rooms up and running quickly with premium audio and video and seamless, comprehensive endpoint compute and control.</p>
+            </div>
+        </div>
+    </section>
+    <!-- END of fifty-fifty 2 Col Block -->
+
+
+
+    <div class="spacer-100"></div>
+
+
+</section>
+
+        <div class="spacer-50"></div>
+
+
+</main>
+<aside class="bg-green text-center padt-30 padb-50">
+    <h2 class="color-white"> Get in touch</h2>
+    <a class="color-yellow button button--yellow font20" href="https://eu.tdsynnex.com/maverickavsolutions/contact">Contact us</a>
+</aside>
