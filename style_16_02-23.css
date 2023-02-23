@@ -271,7 +271,7 @@ ul.row-col--3 li p {
 .card-container__copy {
     margin: 0 auto!important;
     text-align: center!important;
-    color: var(--darkgrey)
+    color: var(--darkgrey)!important;
 }
 
 .card-container__icon img {
@@ -281,6 +281,11 @@ ul.row-col--3 li p {
 .card-container__copy {
     width: 100%!important;
     padding: 0 20px!important;
+    color: var(--darkgrey)!important;
+}
+
+.card-container a {
+    color: var(--darkgrey);
 }
 
 /* Hover style for card */
