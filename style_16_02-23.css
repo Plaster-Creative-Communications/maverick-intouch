@@ -271,6 +271,7 @@ ul.row-col--3 li p {
 .card-container__copy {
     margin: 0 auto!important;
     text-align: center!important;
+    color: var(--darkgrey)
 }
 
 .card-container__icon img {
