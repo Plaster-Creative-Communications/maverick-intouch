@@ -352,34 +352,34 @@ li.open-grid-container:nth-child(n+5) {
 /**********************************************/
 
 .cta-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: center!important;
 }
 .cta-col:nth-child(2) {
-    border-left: 1px solid yellow;
+    border-left: 1px solid yellow!important;
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 25px;
+    display: inline-block!important;
+    padding: 10px 25px!important;
 }
 
 .button--sm {
-    padding: 5px 15px;
+    padding: 5px 15px!important;
 }
 
 .button--white {
-    background-color: transparent;
-    border: 2px solid var(--white);
+    background-color: transparent!important;
+    border: 2px solid var(--white)!important;
 }
 .button--green {
-    background-color: transparent;
-    border: 2px solid var(--green);
+    background-color: transparent!important;
+    border: 2px solid var(--green)!important;
 }
 .button--yellow {
-    background-color: transparent;
-    border: 2px solid var(--yellow);
+    background-color: transparent!important;
+    border: 2px solid var(--yellow)!important;
     color: var(--yellow) !important;
 }
 
