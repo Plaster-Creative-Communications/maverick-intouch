@@ -1,448 +1,25 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://use.typekit.net/kim3yej.css">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-
-<style>
-    :root {
-        --light-blue: #00afce;
-        --white: #ffffff;
-        --green: rgb(0, 87, 88);
-        --lightgrey: #f6f6f6;
-        --darkgrey: #D3D3D3;
-        --yellow: yellow;
-    }
-
-    * {
-        font-family: Arial, Helvetica, sans-serif !important;
-    }
-
-    .z-index1 {
-        z-index: 1;
-    }
-
-    
-    body {
-        background-color: #ffffff !important;
-    }
-
-    section {
-        width: 100%;
-    }
-
-    p {
-        font-size: 16px !important;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        color: var(--green) !important;
-        font-weight: bold;
-    }
-
-
-    h1 {
-        font-size: 36px !important;
-        line-height: 40px !important;
-        font-weight: normal;
-        margin: 3rem 0;
-    }
-
-    h2 {
-        font-size: 32px !important;
-        margin: 3rem 0;
-    }
-
-    h3 {
-        font-size: 22px !important;
-    }
-
-    h4 {
-        font-size: 24px !important;
-    }
-
-    h5 {
-        font-size: 18px !important;
-    }
-
-    /* Font Sizes */
-
-    .font18 { font-size: 18px !important; }
-    .font19 { font-size: 19px !important; }
-    .font20 { font-size: 20px !important; }
-    .font21 { font-size: 21px !important; }
-    .font36 { font-size: 36px !important;
-              line-height: 40px !important;}
-    .font42 { font-size: 42px !important; }
-    .font58 { font-size: 58px !important; }
-
-    /* Font Sytles*/
-    .bold {
-        font-weight: 700 !important;
-    }
-
-
-    /* Widths */
-    .width20 { width: 30% !important; }
-    .width30 { width: 30% !important; }
-    .width40 { width: 40% !important; } 
-    .width50 { width: 50% !important; }
-    .width60 { width: 60% !important; }
-    .width70 { width: 70% !important; }
-    .width80 { width: 80% !important; }
-    .width90 { width: 90% !important; }
-    .width100 { width: 100% !important;}
-
-    /* Colours and Filters */
-
-    .color-blue {  color: var(--light-blue) !important; }
-    .color-white { color: var(--white) !important; }
-    .color-green { color: var(--green) !important; }
-    .colot-yellow { color: var(--yellow) !important;}
-
-    .bg-green {     background-color: var(--green) !important; }    
-    .bg-black {     background-color: #071018 !important; }
-    .bg-blue {      background-color: var(--light-blue) !important; }
-    .bg-darkgrey {  background-color: var(--darkgrey) !important; }
-    .bg-lightgrey { background-color: var(--lightgrey); }
-
-    .green-filter {
-        filter: invert(24%) sepia(13%) saturate(6066%) hue-rotate(154deg) brightness(96%) contrast(101%);
-    }
-
-    .invert {
-        -webkit-filter: invert(100%) !important;
-        filter: invert(100%);
-    }
-
-
-    /* Alignment */
-
-    .center-img,
-    .center-content { margin: auto !important;}
-
-    .text-center { text-align: center!important; }
-    .text-left   { text-align: left!important; }
-    .text-right  { text-align: right!important; }
-
-    .self-align-right { align-self: flex-end;} 
-    .self-align-left  { align-self: flex-start;} 
-
-    .itmes-align-center { align-items: center;}
-
-
-
-    /* Padding */
-
-    .padt-10 { padding-top: 10px; }
-    .padt-30 { padding-top: 30px; }
-    .padt-50 { padding-top: 50px; }
-    .padt-80 { padding-top: 80px; }
-    .padt-100 { padding-top: 100px; }
-
-    .padb-10 { padding-bottom: 10px; }
-    .padb-30 { padding-bottom: 30px; }
-    .padb-50 { padding-bottom: 50px; }
-    .padb-80 { padding-bottom: 80px; }
-    .padb-100 { padding-bottom: 100px; }
-
-    .padl-10 { padding-left: 10px; }
-    .padl-30 { padding-left: 30px; }
-    .padl-50 { padding-left: 50px; }
-    .padl-80 { padding-left: 80px; }
-    .padl-100 { padding-left: 100px; }
-
-    .padr-10 { padding-right: 10px; }
-    .padr-30 { padding-right: 30px; }
-    .padr-50 { padding-right: 50px; }
-    .padr-80 { padding-right: 80px; }
-    .padr-100 { padding-right: 100px; }
-
-    /* Spacer Block Divs */
-
-    [class^="spacer-"] {
-        width: 100%;
-    }
-    .spacer-10 { padding: 5px 0; }
-    .spacer-30 { padding: 15px 0; }
-    .spacer-50 { padding: 25px 0; }
-    .spacer-100 {padding: 50px 0;}
-    
-    
-    /* Containers */
-
-    /* Main container width to force no mobile styles */
-    .main-container {
-        min-width: 1200px !important;
-        max-width: 1400px !important;
-        margin: auto;
-        padding-bottom: 50px;
-    }
-
-    .content-container {
-        display: block;
-        margin: auto !important;
-        min-width: 1200px !important;
-        width: 1200px !important;
-        max-width: 1200px !important
-    }
-
-
-
-    /***************
-        BLOCKS
-    *****************/
-
-
-    /*Hero Image Block*/
-    /**********************************************/
-
-    .hero-image-block,
-    .hero-image-block img {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    /* INTRO SECTION Block*/
-    /**********************************************/
-
-    .intro-section {
-        display: block;
-        padding: 2rem 0;
-        color: var(--green) !important;
-    }
-
-
-    /* Text Block */
-    /**********************************************/
-
-    .text-block h2 {
-        margin-bottom: .5rem;
-    }
-
-
-
-    /* COLUMN BLOCKS */
-    /**********************************************/
-
-    [class^="row-col"] {
-        display: grid;
-        justify-content: center;
-        list-style: none;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        padding-inline-start: 0px;
-        color: #696969;
-        padding-left: 0 !important; /*overide*/
-        margin-left: 0 !important; /*overide*/
-    }
-
-    /* 3 Columns */
-    .row-col--2 {
-      grid: 1fr / repeat(2, calc((1200px / 2) - 1.3rem));
-     gap: 2rem;
-    }
-
-    /* 3 Columns */
-    .row-col--3 {
-        grid: 1fr / repeat(3, calc((1200px / 3) - 1.3rem));
-        gap: 2rem;
-    }
-    ul.row-col--3 li p {
-        line-height: 24px;
-    }
-
-    /* 4 Columns */
-    .row-col--4 {
-        grid: auto / repeat(4, calc((1200px / 4) - 1.3rem));
-        gap: 2rem;
-    }
-
-    /* 6 Columns */
-    .row-col--6 {
-        grid: auto / repeat(6, calc((1200px / 6) - 0.85rem));
-        gap: 1rem;
-    }
-
-
-    [class^="card-container"],
-    .card-container {
-        display: flex;
-        flex-direction: column;
-        transition: all .3s ease-in-out;
-    }
-
-    .card-container__icon,
-    .card-container__copy {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .card-container__icon img {
-        margin: 0 auto;
-    }
-
-    .card-container__copy {
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    /* Hover style for card */
-    .card-hover:hover {
-        background-color: #e2e2e2 !important;
-    }
-
-
-
-    /* Card Grids (no copy - icon and title) Block*/
-    /**********************************************/
-
-    .card-container--grid {
-        padding: 25px;
-        justify-content: center;
-        background-color: #EBEBEB !important;
-    }
-    .card-container--grid h3 {
-        margin-top: 1rem;
-        margin-bottom: unset !important;
-        min-height: 52px;
-    }
-
-
-    /* Logo Grid Block */
-    /**********************************************/
-
-    .logo-grid-card img {
-        padding: .25rem !important;
-        background-color: var(--lightgrey);
-        transition: all .3s ease-in-out; 
-    }
-
-    .logo-grid-card img:hover {
-        background-color: #ebebeb; 
-        outline: 1px solid var(--light-blue);
-        outline-style: dashed;
-        outline-offset: -5px;
-    }
-
-    /* Open Grid Block */
-    /**********************************************/
-
-    .open-grid {
-        gap: unset;
-    }
-
-    .open-grid-container {
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 3px;
-    }
-
-    li.open-grid-container {
-        border-left: 1px solid yellow;
-    }
-    li.open-grid-container:nth-child(1),
-    li.open-grid-container:nth-child(5n+0) {
-        border-left: none;
-    }
-    li.open-grid-container:nth-child(n+5) {
-        border-top: 1px solid yellow;
-    }
-
-
-    /*CTA - 2 Col Block (Contact Page)*/
-    /**********************************************/
-
-    .cta-col {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .cta-col:nth-child(2) {
-        border-left: 1px solid yellow;
-    }
-
-    .button {
-        display: inline-block;
-        padding: 10px 25px;
-    }
-
-    .button--sm {
-        padding: 5px 15px;
-    }
-    
-    .button--white {
-        background-color: transparent;
-        border: 2px solid var(--white);
-    }
-    .button--green {
-        background-color: transparent;
-        border: 2px solid var(--green);
-    }
-    .button--yellow {
-        background-color: transparent;
-        border: 2px solid var(--yellow);
-        color: var(--yellow) !important;
-    }
-
-
-    /* Top Dash Block
-    ***********************************/
-
-    .top-dash-block--blue {
-        border-top: 2px solid var(--light-blue);
-        border-top-style: dashed;
-    }
-    .top-dash-block--green {
-        border-top: 2px solid var(--green);
-        border-top-style: dashed;
-    }
-
-
-    [class^="top-dash-block"] > [class^="heading-block"] > h2 {
-        margin: .8rem 0 1.5rem !important;
-    }
-
-    /* Resources List*/
-
-    ul.resources-list {
-        list-style: none;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 0;
-    }
-    ul.resources-list li {
-        display: inline-block;
-        background-color: var(--lightgrey);
-        padding: 5px 15px;
-        margin-right: 5px;
-    }
-
-
-    /* Page Specific Styles */
-    /**********************************************/
-
-    /* Contact Page */
-    .contact-regions-grid ul.row-col--3{
-        gap: 5rem !important;
-    }
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+
+<!-- This script is importing the global styles -->
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/Plaster-Creative-Communications/maverick-intouch@main/style_16_02-23.css">
+<!-- End of global style scripts  -->
 
 </style>
 
 <script>
     $('#carouselExampleControls').carousel({
         interval: 5000,
-      
+
     })   
 </script>
 
@@ -452,7 +29,8 @@
 
     <!-- Hero image block -->
     <div class="hero-image-block">
-        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/logitech_android.png" alt="Logitech" width="" height="">
+        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/logitech_android.png" alt="Logitech" width=""
+            height="">
     </div>
     <!-- END Hero image block -->
 
@@ -464,181 +42,217 @@
         </section>
         <!-- END of Intro Section Block -->
 
-    
-    <section class="bg-lightgrey padt-50 padb-50">
-            
+
+        <section class="bg-lightgrey padt-50 padb-50">
+
+            <!-- fifty-fifty 2 Col Block -->
+            <section class="fifty-fifty-block">
+                <div class="row-col--2 itmes-align-center">
+                    <div class="col-container padl-30">
+                        <h3 class="">Logitech’s video collaboration solutions create seamless connections between users,
+                            whether working from home, in the office or on the move. </h3>
+                        <p>Their innovative tools are optimised for user performance and IT success with advanced video
+                            collaboration solutions will give you powerful, easy-to-deploy victories across all types of
+                            meeting.</p>
+                    </div>
+                    <div class="col-container padr-30">
+                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_sub.png"
+                            class="width100 self-align-right" alt="Logitech camera" width="" height="">
+                    </div>
+                </div>
+            </section>
+            <!-- END of fifty-fifty 2 Col Block -->
+        </section>
+
+
+        <!-- Text Block -->
+        <section class="text-block padt-30 padb-50">
+            <h2>Personal Collaboration</h2>
+            <p class="font21">Whether working from your home or in the office, Logitech has essential tools for
+                presenting yourself perfectly.</p>
+        </section>
+        <!-- END of Text Block -->
+
+
         <!-- fifty-fifty 2 Col Block -->
-        <section class="fifty-fifty-block">
+        <section class="fifty-fifty-block padt-10 padb-50">
             <div class="row-col--2 itmes-align-center">
-                <div class="col-container padl-30">
-                    <h3 class="">Logitech’s video collaboration solutions create seamless connections between users, whether working from home, in the office or on the move. </h3>
-                    <p>Their innovative tools are optimised for user performance and IT success with advanced video collaboration solutions will give you powerful, easy-to-deploy victories across all types of meeting.</p>
+                <div class="col-container">
+                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_c925e.png"
+                        class="width100 self-align-left padl-30" alt="Working C925E Logitech Camera" width="" height="">
                 </div>
                 <div class="col-container padr-30">
-                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_sub.png" class="width100 self-align-right" alt="Logitech camera" width="" height="">
-                </div>
-            </div>
-        </section>
-        <!-- END of fifty-fifty 2 Col Block -->
-    </section>
-    
-   
-    <!-- Text Block -->
-    <section class="text-block padt-30 padb-50">
-        <h2>Personal Collaboration</h2>
-        <p class="font21">Whether working from your home or in the office, Logitech has essential tools for presenting yourself perfectly.</p>
-    </section>
-    <!-- END of Text Block -->
-
-
-    <!-- fifty-fifty 2 Col Block -->
-    <section class="fifty-fifty-block padt-10 padb-50">
-        <div class="row-col--2 itmes-align-center">
-            <div class="col-container">
-                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_c925e.png" class="width100 self-align-left padl-30" alt="Working C925E Logitech Camera" width="" height="">
-            </div>
-            <div class="col-container padr-30">
-                <h3 class="">Working C925E</h3>
-                <p>C925e is an HD 1080p webcam that delivers outstanding video and sound. Certified for business, affordably priced and engineered for all-day use.</p>
-                <ul>
-                    <li>1080p Auto-focus camera</li>
-                    <li>Logitech Rightlight Technology™ 2 Inside</li>
-                    <li>Stereo Omnidirectional microphones</li>
-                </ul>
-                <a class="button button--sm button--green color-green" href="https://www.logitech.com/en-gb/products/webcams/c925e-business-webcam.960-001076.html" target="_blank" rel="noopener noreferrer">View Working C925E details</a>
-            </div>
-        </div>
-    </section>
-    <!-- END of fifty-fifty 2 Col Block -->
-
-    <section class="bg-lightgrey padt-30 padb-30">
-            
-        <!-- fifty-fifty 2 Col Block -->
-        <section class="fifty-fifty-block">
-            <div class="row-col--2 itmes-align-center">
-                <div class="col-container padl-30">
-                    <h3 class="">Build collaboration with Brio</h3>
-                    <p>4K and HDR packed into the palm of your hand. The Brio is Logitech’s most advanced personal business webcam.</p>
+                    <h3 class="">Working C925E</h3>
+                    <p>C925e is an HD 1080p webcam that delivers outstanding video and sound. Certified for business,
+                        affordably priced and engineered for all-day use.</p>
                     <ul>
-                        <li>Multiple resolutions: 
-                            <ul>
-                                <li>4K@30 fps</li>
-                                <li>1080p 30fps/60fp</li>
-                                <li>720p @ 30fps/60fp/90fps</li>
-                            </ul>
-                        </li>
-                        <li>Autofocus</li>
-                        <li>Rightlight Technology™ 3 Inside</li>
+                        <li>1080p Auto-focus camera</li>
+                        <li>Logitech Rightlight Technology™ 2 Inside</li>
+                        <li>Stereo Omnidirectional microphones</li>
                     </ul>
-                    <a class="button button--sm button--green color-green" href="https://www.logitech.com/en-gb/products/webcams/brio-4k-hdr-webcam.960-001106.html#specs" target="_blank" rel="noopener noreferrer">View Brio details</a>
-                </div>
-                <div class="col-container padr-30">
-                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_brio.png" class="width100 self-align-right" alt="Logitech Brio camera" width="" height="">
+                    <a class="button button--sm button--green color-green"
+                        href="https://www.logitech.com/en-gb/products/webcams/c925e-business-webcam.960-001076.html"
+                        target="_blank" rel="noopener noreferrer">View Working C925E details</a>
                 </div>
             </div>
         </section>
         <!-- END of fifty-fifty 2 Col Block -->
-    </section>
 
-    <!-- Heading Block -->
-    <div class="heading-block--h2  padl-30">
-        <h2>Video collaboration for every meeting room</h2>
-    </div>
-    <!-- END of Heading Block -->
+        <section class="bg-lightgrey padt-30 padb-30">
 
-    
-    <!-- fifty-fifty 2 Col Block -->
-    <section class="fifty-fifty-block padt-30 padb-50">
-        <div class="row-col--2 itmes-align-center">
-            <div class="col-container">
-                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_tap.png" class="width100 self-align-left padl-30" alt="Logitech Tap" width="" height="">
-            </div>
-            <div class="col-container padr-30">
-                <h3 class="">Logitech Tap</h3>
-                <p>Meeting room touch controller for video conferencing services, including Google Meet™, Microsoft Teams® Rooms, and Zoom Rooms™. With a sleek design, silent operation, and motion sensor for always-on readiness, Tap brings ease and convenience to online meetings.</p>
-                <ul>
-                    <li>Responsive 10.1” touch screen for easy operation.</li>
-                    <li>Commercial-grade cable management with strain relief to keep connections tight.</li>
-                    <li>Versatile table and wall mount accessories hide cabling and conserve space.</li>
-                    <li>Bundled with a meeting room computer approved and/or certified for Google Meet Rooms, Microsoft Teams Rooms, or Zoom Rooms.</li>
-                </ul>
-                <a class="button button--sm button--green color-green" href="https://www.logitech.com/en-gb/products/video-conferencing/room-solutions/tap.html" target="_blank" rel="noopener noreferrer">View Logitech Tap details</a>
-            </div>
-        </div>
-    </section>
-    <!-- END of fifty-fifty 2 Col Block -->
-
-    <section class="bg-lightgrey padt-10 padb-10">
-            
-        <!-- fifty-fifty 2 Col Block -->
-        <section class="fifty-fifty-block">
-            <div class="row-col--2 itmes-align-center">
-                <div class="col-container padl-30">
-                    <h3 class="">Logitech MeetUp</h3>
-                    <p>Designed for huddle rooms and other smaller spaces, MeetUp packs big features into a compact form factor.</p>
-                    <ul>
-                        <li>4K Ultra HDCamera with 5XHD zoom</li>
-                        <li>Full-range speaker system</li>
-                        <li>Beamforming microphone array</li>
-                        <li>Motorized pan/tilt lens</li>
-                    </ul>
-                    <a class="button button--sm button--green color-green" href="https://www.logitech.com/en-gb/products/video-conferencing/conference-cameras/meetup-conferencecam.960-001102.html" target="_blank" rel="noopener noreferrer">View Logitech MeetUp details</a>
+            <!-- fifty-fifty 2 Col Block -->
+            <section class="fifty-fifty-block">
+                <div class="row-col--2 itmes-align-center">
+                    <div class="col-container padl-30">
+                        <h3 class="">Build collaboration with Brio</h3>
+                        <p>4K and HDR packed into the palm of your hand. The Brio is Logitech’s most advanced personal
+                            business webcam.</p>
+                        <ul>
+                            <li>Multiple resolutions:
+                                <ul>
+                                    <li>4K@30 fps</li>
+                                    <li>1080p 30fps/60fp</li>
+                                    <li>720p @ 30fps/60fp/90fps</li>
+                                </ul>
+                            </li>
+                            <li>Autofocus</li>
+                            <li>Rightlight Technology™ 3 Inside</li>
+                        </ul>
+                        <a class="button button--sm button--green color-green"
+                            href="https://www.logitech.com/en-gb/products/webcams/brio-4k-hdr-webcam.960-001106.html#specs"
+                            target="_blank" rel="noopener noreferrer">View Brio details</a>
+                    </div>
+                    <div class="col-container padr-30">
+                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_brio.png"
+                            class="width100 self-align-right" alt="Logitech Brio camera" width="" height="">
+                    </div>
                 </div>
-                <div class="col-container padr-30">
-                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_meetup.png" class="width100 self-align-right" alt="Logitech MeetUp camera" width="" height="">
-                </div>
-            </div>
+            </section>
+            <!-- END of fifty-fifty 2 Col Block -->
         </section>
-        <!-- END of fifty-fifty 2 Col Block -->
-    </section>
 
-    <!-- fifty-fifty 2 Col Block -->
-    <section class="fifty-fifty-block padt-50 padb-50">
-        <div class="row-col--2 itmes-align-center">
-            <div class="col-container">
-                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_rally_bar.png?imgCache=16.02.2023" class="width100 self-align-left padl-30" alt="Logitech The Rally Bar camera" width="" height="">
-            </div>
-            <div class="col-container padr-30">
-                <h3 class="">The Rally Bar (and Rally Bar Mini) </h3>
-                <p>Meeting rooms revitalised. Create Zoom Rooms, Microsoft Teams Rooms, Google Rooms and more with The Rally Bar range. All-in-one conferencing solutions that can be connected straight into a laptop, without the need for an external compute.</p>
-                <ul>
-                    <li>4K PTZ Camera</li>
-                    <li>Beamforming Microphones</li>
-                    <li>5x optical zoom</li>
-                    <li>Rightsense technology</li>
-                </ul>
-                <a class="button button--sm button--green color-green" href="https://www.logitech.com/en-gb/products/video-conferencing/room-solutions/rallybar.960-001312.html#specs" target="_blank" rel="noopener noreferrer">View Rally Bar details</a>
-            </div>
-        </div>
-    </section>
-    <!-- END of fifty-fifty 2 Col Block -->
-
-    <div class="spacer-100"></div>
-
-    <section class="top-dash-block--green">
         <!-- Heading Block -->
-        <div class="heading-block--h2">
-            <h2>Resources: Partner SKU Guide</h2>
+        <div class="heading-block--h2  padl-30">
+            <h2>Video collaboration for every meeting room</h2>
         </div>
         <!-- END of Heading Block -->
 
-        <div>
-            <ul class="resources-list">
-                <li><a class="color-green" href="https://1drv.ms/u/s!ApPlzg0HsBQMhgYQKTLJ99pTFOcg?e=cBE5dL" target="_blank" rel="noopener noreferrer">Co-brandable assets (Downloadable in each language)</a></li>
-                <li><a class="color-green" href="https://eu.tdsynnex.com/maverickavsolutions/barco/ms-teams" target="_blank" rel="noopener noreferrer">Firmware Updates</a></li>
-                <li><a class="color-green" href="https://www.logitech.com/en-gb/video-collaboration/resources.html#product-info" target="_blank" rel="noopener noreferrer">Datasheets</a></li>
-                <li><a class="color-green" href="https://www.logitech.com/en-gb/video-collaboration/resources/think-tank/articles/setting-up-video-meeting-space/introduction.html" target="_blank" rel="noopener noreferrer">Room Design Guide</a></li>
-            </ul>
-        </div>
+
+        <!-- fifty-fifty 2 Col Block -->
+        <section class="fifty-fifty-block padt-30 padb-50">
+            <div class="row-col--2 itmes-align-center">
+                <div class="col-container">
+                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_tap.png"
+                        class="width100 self-align-left padl-30" alt="Logitech Tap" width="" height="">
+                </div>
+                <div class="col-container padr-30">
+                    <h3 class="">Logitech Tap</h3>
+                    <p>Meeting room touch controller for video conferencing services, including Google Meet™, Microsoft
+                        Teams® Rooms, and Zoom Rooms™. With a sleek design, silent operation, and motion sensor for
+                        always-on readiness, Tap brings ease and convenience to online meetings.</p>
+                    <ul>
+                        <li>Responsive 10.1” touch screen for easy operation.</li>
+                        <li>Commercial-grade cable management with strain relief to keep connections tight.</li>
+                        <li>Versatile table and wall mount accessories hide cabling and conserve space.</li>
+                        <li>Bundled with a meeting room computer approved and/or certified for Google Meet Rooms,
+                            Microsoft Teams Rooms, or Zoom Rooms.</li>
+                    </ul>
+                    <a class="button button--sm button--green color-green"
+                        href="https://www.logitech.com/en-gb/products/video-conferencing/room-solutions/tap.html"
+                        target="_blank" rel="noopener noreferrer">View Logitech Tap details</a>
+                </div>
+            </div>
+        </section>
+        <!-- END of fifty-fifty 2 Col Block -->
+
+        <section class="bg-lightgrey padt-10 padb-10">
+
+            <!-- fifty-fifty 2 Col Block -->
+            <section class="fifty-fifty-block">
+                <div class="row-col--2 itmes-align-center">
+                    <div class="col-container padl-30">
+                        <h3 class="">Logitech MeetUp</h3>
+                        <p>Designed for huddle rooms and other smaller spaces, MeetUp packs big features into a compact
+                            form factor.</p>
+                        <ul>
+                            <li>4K Ultra HDCamera with 5XHD zoom</li>
+                            <li>Full-range speaker system</li>
+                            <li>Beamforming microphone array</li>
+                            <li>Motorized pan/tilt lens</li>
+                        </ul>
+                        <a class="button button--sm button--green color-green"
+                            href="https://www.logitech.com/en-gb/products/video-conferencing/conference-cameras/meetup-conferencecam.960-001102.html"
+                            target="_blank" rel="noopener noreferrer">View Logitech MeetUp details</a>
+                    </div>
+                    <div class="col-container padr-30">
+                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_meetup.png"
+                            class="width100 self-align-right" alt="Logitech MeetUp camera" width="" height="">
+                    </div>
+                </div>
+            </section>
+            <!-- END of fifty-fifty 2 Col Block -->
+        </section>
+
+        <!-- fifty-fifty 2 Col Block -->
+        <section class="fifty-fifty-block padt-50 padb-50">
+            <div class="row-col--2 itmes-align-center">
+                <div class="col-container">
+                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logitech_rally_bar.png?imgCache=16.02.2023"
+                        class="width100 self-align-left padl-30" alt="Logitech The Rally Bar camera" width="" height="">
+                </div>
+                <div class="col-container padr-30">
+                    <h3 class="">The Rally Bar (and Rally Bar Mini) </h3>
+                    <p>Meeting rooms revitalised. Create Zoom Rooms, Microsoft Teams Rooms, Google Rooms and more with
+                        The Rally Bar range. All-in-one conferencing solutions that can be connected straight into a
+                        laptop, without the need for an external compute.</p>
+                    <ul>
+                        <li>4K PTZ Camera</li>
+                        <li>Beamforming Microphones</li>
+                        <li>5x optical zoom</li>
+                        <li>Rightsense technology</li>
+                    </ul>
+                    <a class="button button--sm button--green color-green"
+                        href="https://www.logitech.com/en-gb/products/video-conferencing/room-solutions/rallybar.960-001312.html#specs"
+                        target="_blank" rel="noopener noreferrer">View Rally Bar details</a>
+                </div>
+            </div>
+        </section>
+        <!-- END of fifty-fifty 2 Col Block -->
+
+        <div class="spacer-100"></div>
+
+        <section class="top-dash-block--green">
+            <!-- Heading Block -->
+            <div class="heading-block--h2">
+                <h2>Resources: Partner SKU Guide</h2>
+            </div>
+            <!-- END of Heading Block -->
+
+            <div>
+                <ul class="resources-list">
+                    <li><a class="color-green" href="https://1drv.ms/u/s!ApPlzg0HsBQMhgYQKTLJ99pTFOcg?e=cBE5dL"
+                            target="_blank" rel="noopener noreferrer">Co-brandable assets (Downloadable in each
+                            language)</a></li>
+                    <li><a class="color-green" href="https://eu.tdsynnex.com/maverickavsolutions/barco/ms-teams"
+                            target="_blank" rel="noopener noreferrer">Firmware Updates</a></li>
+                    <li><a class="color-green"
+                            href="https://www.logitech.com/en-gb/video-collaboration/resources.html#product-info"
+                            target="_blank" rel="noopener noreferrer">Datasheets</a></li>
+                    <li><a class="color-green"
+                            href="https://www.logitech.com/en-gb/video-collaboration/resources/think-tank/articles/setting-up-video-meeting-space/introduction.html"
+                            target="_blank" rel="noopener noreferrer">Room Design Guide</a></li>
+                </ul>
+            </div>
+        </section>
+
     </section>
 
-</section>
-
-        <div class="spacer-50"></div>
+    <div class="spacer-50"></div>
 
 
 </main>
 <aside class="bg-green text-center padt-30 padb-50">
     <h2 class="color-white"> Get in touch</h2>
-    <a class="color-yellow button button--yellow font20" href="https://eu.tdsynnex.com/maverickavsolutions/contact">Contact us</a>
+    <a class="color-yellow button button--yellow font20"
+        href="https://eu.tdsynnex.com/maverickavsolutions/contact">Contact us</a>
 </aside>
