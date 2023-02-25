@@ -3,7 +3,7 @@
     --white: #ffffff;
     --green: rgb(0, 87, 88);
     --lightgrey: #f6f6f6;
-    --darkgrey: #D3D3D3;
+    --darkgrey: #8d8d8d;
     --yellow: yellow;
 }
 
@@ -193,10 +193,35 @@ h5 {
 .hero-image-block,
 .hero-image-block img {
     display: block!important;
+    position: relative !important;
     width: 100%!important;
     height: auto!important;
     margin: 0 auto!important;
 }
+
+.hero-image-block h1 {
+    font-weight: bold !important;
+    color: var(--white) !important;
+}
+
+.hero-image-block p {
+    font-size: 22px !important;
+    color: var(--white) !important;
+}
+
+.hero-image-block .hero-content {
+    position: absolute !important;
+    bottom: 0 !important;
+    padding-bottom: 3rem;
+}
+
+.hero-image-block .hero-content > * {
+    margin: 0 auto 1.5rem auto !important;
+    min-width: 1200px !important;
+    width: 1200px !important;
+    max-width: 1200px !important;
+}
+
 
 /* INTRO SECTION Block*/
 /**********************************************/
