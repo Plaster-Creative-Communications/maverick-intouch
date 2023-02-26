@@ -60,6 +60,7 @@ h5 {
 
 /* Font Sizes */
 
+.font16 { font-size: 16px !important; }
 .font18 { font-size: 18px !important; }
 .font19 { font-size: 19px !important; }
 .font20 { font-size: 20px !important; }
@@ -97,7 +98,8 @@ h5 {
 .bg-black {     background-color: #071018 !important; }
 .bg-blue {      background-color: var(--light-blue) !important; }
 .bg-darkgrey {  background-color: var(--darkgrey) !important; }
-.bg-lightgrey { background-color: var(--lightgrey); }
+.bg-lightgrey { background-color: var(--lightgrey) !important; }
+.bg-white { background-color: var(--white) !important; }
 
 .green-filter {
     filter: invert(24%) sepia(13%) saturate(6066%) hue-rotate(154deg) brightness(96%) contrast(101%);
@@ -255,6 +257,8 @@ h5 {
     color: #696969!important;
     padding-left: 0 !important; /*overide*/
     margin-left: 0 !important; /*overide*/
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 /* 3 Columns */
@@ -450,6 +454,23 @@ ul.resources-list li {
 }
 
 
+
+/* NEWS - ARTICLE */
+/**********************************************/
+article.news-article {
+    max-width: 100ch;
+    min-width: 100ch;
+    width: 100ch;
+}
+article.news-article p,
+article.news-article a,
+article.news-article ul li,
+article.news-article ol li,
+article.news-article span {
+    font-size: 20px !important;
+}
+
+
 /* Page Specific Styles */
 /**********************************************/
 
@@ -458,3 +479,30 @@ ul.resources-list li {
     gap: 5rem !important;
 }
 
+
+/* Microsoft Teams for Meetings */
+
+.minh-400 {
+    min-height: 400px !important;
+}
+
+.numbered-col .numb {
+    display: flex !important;
+    padding: 10px !important;
+    background: var(--green) !important;
+    border-radius: 50px !important;
+    height: 50px !important;
+    width: 50px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: var(--white) !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
+}
+
+.numbered-col > h2,
+.numbered-col h3
+{
+    margin: 0rem 0 0.5rem 0 !important;
+}
