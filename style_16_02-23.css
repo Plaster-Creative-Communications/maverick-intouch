@@ -24,7 +24,7 @@ section {
     width: 100%;
 }
 
-p {
+p, ul li, ol li {
     font-size: 16px !important;
 }
 
@@ -398,6 +398,8 @@ li.open-grid-container:nth-child(n+5) {
 .button {
     display: inline-block!important;
     padding: 10px 25px!important;
+    height: 35px !important;
+    font-size: 16px !important;
 }
 
 .button--sm {
