@@ -292,6 +292,7 @@ ul.row-col--3 li p {
 [class^="card-container"],
 .card-container {
     display: flex!important;
+    position: relative;
     flex-direction: column!important;
     transition: all .3s ease-in-out!important;
 }
@@ -354,6 +355,21 @@ ul.row-col--3 li p {
     outline-style: dashed!important;
     outline-offset: -5px!important;
 }
+
+
+/* Give <li> cards links by overlaying the card with a link */
+/**********************************************/
+.card-capture-link {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
 
 /* Open Grid Block */
 /**********************************************/
