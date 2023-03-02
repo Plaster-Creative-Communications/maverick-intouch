@@ -4,7 +4,8 @@
     --green: rgb(0, 87, 88);
     --lightgrey: #f6f6f6;
     --darkgrey: #8d8d8d;
-    --yellow: yellow;
+    --yellow: #CCD814;
+    --light-green: #aad6d6;
 }
 
 * {
@@ -92,7 +93,8 @@ h5 {
 .color-blue {  color: var(--light-blue) !important; }
 .color-white { color: var(--white) !important; }
 .color-green { color: var(--green) !important; }
-.colot-yellow { color: var(--yellow) !important;}
+.color-yellow { color: var(--yellow) !important;}
+.color-light-green { color: var(--light-green) !important;}
 
 .bg-green {     background-color: var(--green) !important; }    
 .bg-black {     background-color: #071018 !important; }
@@ -100,6 +102,8 @@ h5 {
 .bg-darkgrey {  background-color: var(--darkgrey) !important; }
 .bg-lightgrey { background-color: var(--lightgrey) !important; }
 .bg-white { background-color: var(--white) !important; }
+.bg-yellow { background-color: var(--yellow) !important;}
+.bg-light-green { background-color: var(--light-green) !important;}
 
 .green-filter {
     filter: invert(24%) sepia(13%) saturate(6066%) hue-rotate(154deg) brightness(96%) contrast(101%);
@@ -125,6 +129,7 @@ h5 {
 
 .itmes-align-center { align-items: center!important;}
 
+.content-between { justify-content: space-between !important; }
 
 
 /* Padding */
@@ -163,6 +168,20 @@ h5 {
 .spacer-50 { padding: 25px 0!important; }
 .spacer-100 {padding: 50px 0!important;}
 
+
+/* Hover styles */
+.underline-none {
+    text-decoration: none !important;
+}
+
+.hover-underline:hover {
+    text-decoration: underline !important;
+}
+
+.hover-underline-thicken:hover {
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+}
 
 /* Containers */
 
@@ -416,10 +435,12 @@ li.open-grid-container:nth-child(n+5) {
     padding: 10px 25px!important;
     height: 35px !important;
     font-size: 16px !important;
+    transition: all .3s ease-in-out !important;
+    text-decoration: none !important;
 }
 
 .button--sm {
-    padding: 5px 15px!important;
+    padding: 5px 15px !important;
 }
 
 .button--white {
@@ -430,6 +451,12 @@ li.open-grid-container:nth-child(n+5) {
     background-color: transparent!important;
     border: 2px solid var(--green)!important;
 }
+
+.button--green:hover {
+    background-color: var(--green)!important;
+    color: var(--white) !important;
+}
+
 .button--yellow {
     background-color: transparent!important;
     border: 2px solid var(--yellow)!important;
@@ -487,6 +514,78 @@ article.news-article ol li,
 article.news-article span {
     font-size: 20px !important;
 }
+
+
+/* NEWS - PAGE (list of posts) */
+/***********************************************/
+
+.news-page .row-col--3 .card-container .card-container__copy {
+    height: 100% !important;
+    /* justify-content: space-between !important;         */
+}
+
+.news-page .card-container__copy .news-label {
+    display: block !important;
+    padding: 1px 10px !important;
+    margin-top: 1rem !important;
+    background: var(--light-green) !important;
+    color: var(--green) !important;
+    border-radius: 20px;
+    width: max-content !important;
+    font-size: 14px !important;
+}
+
+
+.hero-image-block--news h1 {
+    color: var(--yellow) !important;
+    font-size: 75px !important;
+    line-height: 73px !important;
+}
+
+.news-upcoming-events-section {
+    grid: 1fr / repeat(2, calc((1400px / 2) - 5rem)) !important;
+    gap: 5rem!important;
+}
+
+.news-upcoming-events-section h2 {
+    margin-top: 0 !important;
+}
+
+.news-events-list {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    padding-inline-start: 0px !important;
+}
+
+.news-events-list li {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    border-top: 3px solid var(--light-blue) !important;
+    gap: 2rem !important;
+    line-height: 23px !important;
+    padding: 10px 0 !important;
+}
+
+.news-events-list li .news-events-list__date{
+    border-radius: 10px !important;
+}
+
+.news-events-list li .news-events-list__date sup {
+    top: -.3em !important;
+}
+
+
+/* Spotify Block */
+/**********************************************/
+.spotify-section {
+    background-color: #282828 !important;
+}
+
+
 
 
 /* Page Specific Styles */
