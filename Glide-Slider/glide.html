@@ -72,7 +72,7 @@
     https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js
     "></script>
 
-    <script>
+    <!-- <script>
         const config = {
             type: 'carousel',
             startAt: 0,
@@ -93,10 +93,19 @@
 
         new Glide('#glide2', config2).mount()
 
-    </script>
+    </script> -->
 
     <script>
-
+        const config = {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            focusAt: 2,
+            gap: 50,
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            new Glide('.glide', config).mount()
+        });
     </script>
 
 
