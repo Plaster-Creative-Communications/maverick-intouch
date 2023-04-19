@@ -883,3 +883,163 @@ article.news-article span {
     margin: auto;
 }
 
+/* Vanilla Car Styles */
+
+    .carousel {
+        margin-bottom: 100px;
+    }
+
+    .carousel__view {
+        width: 1200px;
+        height: 500px;
+        background: white;
+        /* box-shadow: 0 1px 8px #888; */
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel__control {
+        position: absolute;
+        z-index: 1;
+        height: 500px;
+        width: 70px;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        display: table;
+        cursor: pointer;
+    }
+
+    .carousel__control .icon {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .carousel__control:hover {
+        background-color: rgba(221, 221, 221, .8);
+    }
+
+    .carousel__control:first-of-type {
+        left: 0;
+    }
+
+    .carousel__control:last-of-type {
+        right: 0;
+    }
+
+    .product-list {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s;
+        transform: translateX(0px);
+        list-style: none;
+        height: 500px;
+    }
+
+    .product-list__item {
+        width: 400px;
+
+        display: inline-block;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .product span {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+    }
+
+    .product[data-slide="1"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="2"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="3"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="4"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="5"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="6"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="76"] {
+        background-color: #f6f6f6;
+    }
+
+    /* Additional slide styles */
+    .slide-img-wrap {
+        width: 400px !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    .slide-img {
+        width: 100% !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    /* This needs a fixed hieght with content setting at the top */
+    .slide-text-wrap {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        color: #000 !important;
+        width: auto !important;
+
+        padding: 40px;
+    }
+
+    .slide-heading {
+        width: 100%;
+    }
+
+    .slide-heading,
+    .slide-text {
+        font-family: "futura-pt", sans-serif !important;
+        color: #000 !important;
+        text-align: center !important;
+    }
+
+    .slide-heading {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 204x !important;
+    }
+
+    .slide-text {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        font-style: normal;
+        line-height: 20px !important;
+    }
+
+

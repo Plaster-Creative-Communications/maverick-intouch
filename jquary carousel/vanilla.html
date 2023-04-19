@@ -1,0 +1,373 @@
+<style>
+    .carousel {
+        margin-bottom: 100px;
+    }
+
+    .carousel__view {
+        width: 1200px;
+        height: 500px;
+        background: white;
+        /* box-shadow: 0 1px 8px #888; */
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel__control {
+        position: absolute;
+        z-index: 1;
+        height: 500px;
+        width: 70px;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        display: table;
+        cursor: pointer;
+    }
+
+    .carousel__control .icon {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .carousel__control:hover {
+        background-color: rgba(221, 221, 221, .8);
+    }
+
+    .carousel__control:first-of-type {
+        left: 0;
+    }
+
+    .carousel__control:last-of-type {
+        right: 0;
+    }
+
+    .product-list {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s;
+        transform: translateX(0px);
+        list-style: none;
+        height: 500px;
+    }
+
+    .product-list__item {
+        width: 400px;
+
+        display: inline-block;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .product span {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+    }
+
+    .product[data-slide="1"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="2"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="3"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="4"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="5"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="6"] {
+        background-color: #f6f6f6;
+    }
+
+    .product[data-slide="76"] {
+        background-color: #f6f6f6;
+    }
+
+    /* Additional slide styles */
+    .slide-img-wrap {
+        width: 400px !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    .slide-img {
+        width: 100% !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    /* This needs a fixed hieght with content setting at the top */
+    .slide-text-wrap {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        color: #000 !important;
+        width: auto !important;
+
+        padding: 40px;
+    }
+
+    .slide-heading {
+        width: 100%;
+    }
+
+    .slide-heading,
+    .slide-text {
+        font-family: "futura-pt", sans-serif !important;
+        color: #000 !important;
+        text-align: center !important;
+    }
+
+    .slide-heading {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 204x !important;
+    }
+
+    .slide-text {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        font-style: normal;
+        line-height: 20px !important;
+    }
+</style>
+
+<body>
+
+
+    <div class="carousel js-product-carousel">
+        <div class="carousel__view">
+            <span class="carousel__control js-carousel-prev"><i class="icon">p</i></span>
+            <span href="#" class="carousel__control js-carousel-next"><i class="icon">n</i></span>
+            <ul class="product-list js-product-list">
+                <li class="product-list__item">
+                    <div data-slide="1" class="product">
+                        <div class="slide-img-wrap">
+                            <img class="slide-img"
+                                src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/rally-plus-slide.jpg"
+                                alt="">
+                        </div>
+                        <div class="slide-text-wrap">
+                            <h3 class="slide-heading">
+                                Rally Plus
+                            </h3>
+                            <p class="slide-text">
+                                The Logitech Rally Plus Video Conferencing Kit offers professional quality video and
+                                audio for large rooms.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="2" class="product">
+                        <div class="slide-img-wrap">
+                            <img class="slide-img"
+                                src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/meet-up-slide.png"
+                                alt="">
+                        </div>
+                        <div class="slide-text-wrap">
+                            <h3 class="slide-heading">
+                                Meet Up
+                            </h3>
+                            <p class="slide-text">
+                                The Logitech MeetUp 4K is designed for small conference and huddle rooms, with an
+                                ultra-wide 120° field of view you can be sure everyone will be seen.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="3" class="product">
+                        <div class="slide-img-wrap">
+                            <img class="slide-img"
+                                src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/tap-slide.jpg"
+                                alt="">
+                        </div>
+                        <div class="slide-text-wrap">
+                            <h3 class="slide-heading">
+                                Tap
+                            </h3>
+                            <p class="slide-text">
+                                More than just a meeting room touch controller, Logitech Tap is what helps you
+                                achieve a
+                                consistent user experience across your entire deployment.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="4" class="product">
+                        <div class="slide-img-wrap">
+                            <img class="slide-img"
+                                src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logi-dock-slide.jpg"
+                                alt="">
+                        </div>
+                        <div class="slide-text-wrap">
+                            <h3 class="slide-heading">
+                                Logi Dock
+                            </h3>
+                            <p class="slide-text">
+                                Logi Dock is an all-in-one docking station that simplifies home office setup,
+                                reduces
+                                desktop clutter, and helps remote workers feel more productive.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="5" class="product">
+                        <div class="slide-img-wrap">
+                            <img class="slide-img"
+                                src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/rally-bar-tap-ip-slide.jpg"
+                                alt="">
+                        </div>
+                        <div class="slide-text-wrap">
+                            <h3 class="slide-heading">
+                                Rally Bar + Tap IP
+                            </h3>
+                            <p class="slide-text">
+                                Full solution featuring an all-in-one video bar and touch controller with PoE
+                                connectivity. Ideal for medium and large rooms up to 20 people.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="6" class="product">
+                        <div class="slide-img-wrap">
+                            <img class="slide-img"
+                                src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/meetup-roommate-tap-ip-compute-mount-slide.jpg"
+                                alt="">
+                        </div>
+                        <div class="slide-text-wrap">
+                            <h3 class="slide-heading">
+                                MeetUp + RoomMate + Tap IP + Compute Mount
+                            </h3>
+                            <p class="slide-text">
+                                MeetUp + RoomMate + Tap IP is a low-cost solution for huddle and small rooms with 2
+                                - 6
+                                people.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="7" class="product">
+                        <span>7</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="carousel js-product-carousel">
+        <div class="carousel__view">
+            <span class="carousel__control js-carousel-prev"><i class="icon">previous</i></span>
+            <span href="#" class="carousel__control js-carousel-next"><i class="icon">next</i></span>
+            <ul class="product-list js-product-list">
+                <li class="product-list__item">
+                    <div data-slide="1" class="product">
+                        <span>1</span>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="2" class="product">
+                        <span>2</span>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="3" class="product">
+                        <span>3</span>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="4" class="product">
+                        <span>4</span>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="5" class="product">
+                        <span>5</span>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <div data-slide="6" class="product">
+                        <span>6</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    (function () {
+        var carousels = document.querySelectorAll('.js-product-carousel');
+
+        [].forEach.call(carousels, function (carousel) {
+            carouselize(carousel);
+        });
+
+    })();
+
+    function carouselize(carousel) {
+        var productList = carousel.querySelector('.js-product-list');
+        var productListWidth = 0;
+        var productListSteps = 0;
+        var products = carousel.querySelectorAll('.product');
+        var productAmount = 0;
+        var productAmountVisible = 4;
+        var carouselPrev = carousel.querySelector('.js-carousel-prev');
+        var carouselNext = carousel.querySelector('.js-carousel-next');
+
+        //Count all the products
+        [].forEach.call(products, function (product) {
+            productAmount++;
+            productListWidth += 400;
+            productList.style.width = productListWidth + "px";
+        });
+
+        carouselNext.onclick = function () {
+            if (productListSteps < productAmount - productAmountVisible) {
+                productListSteps++;
+                moveProductList();
+            }
+        }
+        carouselPrev.onclick = function () {
+            if (productListSteps > 0) {
+                productListSteps--;
+                moveProductList();
+            }
+        }
+
+        // This is a bit hacky, let me know if you find a better way to do this!
+        // Move the carousels product-list
+        function moveProductList() {
+            productList.style.transform = "translateX(-" + 400 * productListSteps + "px)";
+        }
+    }
+</script>
