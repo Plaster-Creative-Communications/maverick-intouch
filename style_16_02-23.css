@@ -764,6 +764,19 @@ article.news-article span {
     text-align: center!important;
 }
 
+.card3-absolute-copy {
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+    width: 300px;
+}
+
+.logitech-cta-btn {
+    border: 1px solid #13988D!important;
+    padding: 10px 20px!important;
+    background-color:#fff;
+}
+
 /* Carousel styles */
 
 .car-container {
@@ -877,7 +890,7 @@ article.news-article span {
 
 .slide-video-wrap {
     width: 790px!important;
-    height: 425px!important;
+    height: 500px!important;
     display: flex!important;
     justify-content: center!important;
     margin: auto;
@@ -1041,5 +1054,188 @@ article.news-article span {
         font-style: normal;
         line-height: 20px !important;
     }
+
+    /* Video Carousel Styles */
+
+
+    .carousel-2 {
+        width: 920px;
+        margin-bottom: 100px;
+        position: relative;
+        margin: auto;
+    }
+
+    .carousel__view-2 {
+        width: 780px;
+        height: 500px;
+        background: white;
+        box-shadow: 0 1px 8px #888;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel__control-2 {
+        position: absolute;
+        z-index: 1;
+        height: 500px;
+        width: 70px;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        display: table;
+        cursor: pointer;
+    }
+
+    .carousel__control-2 .icon-2 {
+        display: absolute;
+        vertical-align: middle;
+        text-align: center;
+    }
+    /* This are not working look into it */
+
+
+    .carousel__control-2:hover {
+        background-color: rgba(221, 221, 221, .8);
+    }
+
+    .carousel__control-2:first-of-type {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        
+    }
+
+    .carousel__control-2:first-of-type .icon-2 {
+        position: absolute;
+        bottom: 230px;
+        left: 10px;
+        font-size: 40px;
+    }
+
+    .carousel__control-2:last-of-type {
+        right: 0;
+    }
+
+    .carousel__control-2:last-of-type .icon-2 {
+        position: absolute;
+        bottom: 230px;
+        right: 10px;
+        font-size: 40px;
+    }
+
+    .product-list-2 {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s;
+        transform: translateX(0px);
+        list-style: none;
+        height: 500px;
+    }
+
+    .product-list__item-2 {
+        width: 780px;
+        display: inline-block;
+    }
+
+    .product-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-2 span {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+    }
+
+    .product-2[data-slide="1"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="2"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="3"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="4"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="5"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="6"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="76"] {
+        background-color: #f6f6f6;
+    }
+
+    /* Additional slide styles */
+    .slide-img-wrap-2 {
+        width: 400px !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    .slide-img-2 {
+        width: 100% !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    /* This needs a fixed hieght with content setting at the top */
+    .slide-text-wrap-2 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        color: #000 !important;
+        width: auto !important;
+
+        padding: 40px;
+    }
+
+    .slide-heading-2 {
+        width: 100%;
+    }
+
+    .slide-heading-2,
+    .slide-text-2 {
+        font-family: "futura-pt", sans-serif !important;
+        color: #000 !important;
+        text-align: center !important;
+    }
+
+    .slide-heading-2 {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 204x !important;
+    }
+
+    .slide-text-2 {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        font-style: normal;
+        line-height: 20px !important;
+    }
+
+
 
 
