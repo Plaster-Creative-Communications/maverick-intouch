@@ -1,30 +1,25 @@
 
 @font-face {
-    font-family: 'TWK Everett';
-    src: url('/fonts/twkeverett-bold-webfont.woff2') format('woff2'),
+    font-family: 'twk_everettregular';
+    src: url('/fonts/twkeverett-bold-webfont.woff') format('woff2'),
          url('/fonts/twkeverett-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: bold;
 
 }
 
-
-
-
 @font-face {
-    font-family: 'TWK Everett';
+    font-family: 'twk_everettregular';
     src: url('/fonts/twkeverett-medium-webfont.woff2') format('woff2'),
          url('/fonts/twkeverett-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: medium;
+    font-style: medium;
 
 }
 
 
-
-
 @font-face {
-    font-family: 'TWK Everett';
+    font-family: 'twk_everettregular';
     src: url('/fonts/twkeverett-regular-webfont.woff2') format('woff2'),
          url('/fonts/twkeverett-regular-webfont.woff') format('woff');
     font-weight: normal;
