@@ -1,31 +1,31 @@
-
 @font-face {
-    font-family: 'twk_everettregular';
-    src: url('/fonts/twkeverett-bold-webfont.woff') format('woff2'),
-         url('/fonts/twkeverett-bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: bold;
-
-}
-
-@font-face {
-    font-family: 'twk_everettregular';
-    src: url('/fonts/twkeverett-medium-webfont.woff2') format('woff2'),
-         url('/fonts/twkeverett-medium-webfont.woff') format('woff');
-    font-weight: medium;
+    font-family: 'TWK Everett';
+    src: url('https://cdn.jsdelivr.net/gh/Plaster-Creative-Communications/maverick-intouch@main/fonts/twkeverett/twkeverett-medium-webfont.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/Plaster-Creative-Communications/maverick-intouch@main/fonts/twkeverett/twkeverett-medium-webfont.woff') format('woff');
+    font-weight: 500;
     font-style: medium;
 
 }
 
 
-@font-face {
-    font-family: 'twk_everettregular';
-    src: url('/fonts/twkeverett-regular-webfont.woff2') format('woff2'),
-         url('/fonts/twkeverett-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    @font-face {
+        font-family: 'TWK Everett';
+        src: url('https://cdn.jsdelivr.net/gh/Plaster-Creative-Communications/maverick-intouch@main/fonts/twkeverett/twkeverett-bold-webfont.woff2') format('woff2'),
+            url('https://cdn.jsdelivr.net/gh/Plaster-Creative-Communications/maverick-intouch@main/fonts/twkeverett/twkeverett-bold-webfont.woff') format('woff');
+        font-weight: 700;
+        font-style: bold;
 
-}
+    }
+
+
+    @font-face {
+        font-family: 'TWK Everett';
+        src: url('https://cdn.jsdelivr.net/gh/Plaster-Creative-Communications/maverick-intouch@main/fonts/twkeverett/twkeverett-regular-webfont.woff2') format('woff2'),
+            url('https://cdn.jsdelivr.net/gh/Plaster-Creative-Communications/maverick-intouch@main/fonts/twkeverett/twkeverett-regular-webfont.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+
+    }
 
 :root {
     --light-blue: #00afce;
