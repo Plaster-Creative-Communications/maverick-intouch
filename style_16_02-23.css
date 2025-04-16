@@ -38,7 +38,7 @@
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: 'TWK Everett', Arial, Helvetica, sans-serif !important;
 }
 
 .z-index1 {
@@ -1477,4 +1477,62 @@ box-shadow: 0px 0px 20px #f0f0f0!important; */
     font-size: 16px !important;
     font-style: normal;
     line-height: 20px !important;
+}
+
+.webinars p {
+    font-family: 'TWK Everett';
+    font-size: 21px !important;
+    line-height: 1.8 !important;
+    color: #003031 !important;
+}
+
+.webinars .intro-section {
+    display: flex !important;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 !important;
+    border-bottom: 2px solid;
+}
+
+.webinars .intro-section h2{
+    margin: 0 !important;
+    font-weight: normal !important;
+}
+.webinars .intro-section img {
+    max-width: 200px;
+}
+
+.webinars .row-col--2 {
+    gap: 3rem !important;
+    grid: 1fr / repeat(2, calc((1200px / 2) - 5.3rem))
+}
+
+.webinars .button {
+    font-size: 21px !important;
+    padding: 1rem 2rem !important;
+    height: auto !important;
+    cursor: pointer;
+    background-color: #003031;
+    border: 2px solid #003031;
+    color: white;
+    border-radius: 50px;
+}
+
+.webinars .button:hover {
+    background-color: transparent;
+    color: #003031;
+}
+
+.webinars .row-col--4 {
+    text-align: center;
+    align-items: center;
+}
+
+.webinars .logo-grid-card img {
+    background-color: transparent !important;
+}
+
+.webinars .logo-grid-card img:hover {
+    outline: none !important;
 }
