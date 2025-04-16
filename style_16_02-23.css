@@ -1493,6 +1493,7 @@ box-shadow: 0px 0px 20px #f0f0f0!important; */
     align-items: center;
     margin: 3rem 0 !important;
     border-bottom: 2px solid;
+    padding: 1rem 0 !important;
 }
 
 .webinars .intro-section h2{
@@ -1515,7 +1516,7 @@ box-shadow: 0px 0px 20px #f0f0f0!important; */
     cursor: pointer;
     background-color: #003031;
     border: 2px solid #003031;
-    color: white;
+    color: white !important;
     border-radius: 50px;
 }
 
